@@ -1,6 +1,13 @@
 {
 	"name": "svelte-docker",
 	"version": "0.0.1",
+	"main": "index.js",
+	"repository": "https://github.com/alpercitak/svelte-docker.git",
+	"author": "Alper Çıtak <citak.alper@gmail.com>",
+	"license": "MIT",
+	"description": "Svelte Docker configuration",
+	"private": true,
+	"type": "module",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
@@ -12,6 +19,10 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. ."
+	},
+	"dependencies": {
+		"@fontsource/fira-mono": "^4.5.0",
+		"cookie": "^0.4.1"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.22.2",
@@ -32,10 +43,5 @@
 		"svelte-preprocess": "^4.10.6",
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.2"
-	},
-	"type": "module",
-	"dependencies": {
-		"@fontsource/fira-mono": "^4.5.0",
-		"cookie": "^0.4.1"
 	}
 }
