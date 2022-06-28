@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
       target: deploy-static
     ports:
-      - 3000:80
+      - 3001:80
 
   app-node:
     image: svelte-docker-node
@@ -16,4 +16,4 @@ services:
       dockerfile: Dockerfile
       target: deploy-node
     ports:
-      - 3000:3000
+      - 3002:3000

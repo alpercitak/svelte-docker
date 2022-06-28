@@ -59,6 +59,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@macfja/svelte-multi-adapter@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@macfja/svelte-multi-adapter/-/svelte-multi-adapter-1.0.2.tgz#dc70aa38f60ed0276cf2fe4415ae9a796080d119"
+  integrity sha512-jGfAch+/GGsUF+QzpzK01G7Zk16acqM16JGtvuTi21YeloGub8/rYcUMqN0OlzDxgxjtCpEho9tmqsOpQUVkVg==
+
 "@mapbox/node-pre-gyp@^1.0.5":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.9.tgz#09a8781a3a036151cdebbe8719d6f8b25d4058bc"
