@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app-static:
+    image: svelte-docker-static
+    build:
+      context: .
+      dockerfile: Dockerfile-static
+      target: deploy
+    ports:
+      - 3000:80
