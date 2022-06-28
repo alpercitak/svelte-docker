@@ -1,5 +1,6 @@
 // import adapter from '@sveltejs/adapter-auto';
-import adapterStatic from '@sveltejs/adapter-static';
+// import adapterStatic from '@sveltejs/adapter-static';
+import adapterNode from '@sveltejs/adapter-node';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -9,7 +10,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapterStatic(),
+		adapter: adapterNode(),
 
 		// Override http methods in the Todo forms
 		methodOverride: {

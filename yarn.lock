@@ -138,6 +138,13 @@
     set-cookie-parser "^2.4.8"
     tiny-glob "^0.2.9"
 
+"@sveltejs/adapter-node@^1.0.0-next.78":
+  version "1.0.0-next.78"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-node/-/adapter-node-1.0.0-next.78.tgz#72c35dfc5bdf6e15aa206745b39ca6402185f318"
+  integrity sha512-TXB5Ii0z/7o1B05p/YLsS4t+JUHFHWBzFv1U16TKvM3HMbMUJIx+AhpM2WJfDX8HtAyfd1m9OawGoUB+1ed24A==
+  dependencies:
+    tiny-glob "^0.2.9"
+
 "@sveltejs/adapter-static@^1.0.0-next.34":
   version "1.0.0-next.34"
   resolved "https://registry.yarnpkg.com/@sveltejs/adapter-static/-/adapter-static-1.0.0-next.34.tgz#f17e967e43f73e57feed6d81d8151de1e09d9836"

@@ -4,7 +4,16 @@ services:
     image: svelte-docker-static
     build:
       context: .
-      dockerfile: Dockerfile-static
-      target: deploy
+      dockerfile: Dockerfile
+      target: deploy-static
     ports:
       - 3000:80
+
+  app-node:
+    image: svelte-docker-node
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: deploy-node
+    ports:
+      - 3000:3000
