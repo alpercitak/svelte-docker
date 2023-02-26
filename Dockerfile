@@ -1,11 +1,11 @@
-FROM node:16.7-alpine AS build
+FROM node:18-alpine AS build
 
 WORKDIR /app
 COPY . .
 RUN yarn
 RUN yarn build
 
-FROM nginx:1.18-alpine AS deploy-static
+FROM nginx:1.23.3-alpine-slim AS deploy-static
 
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
@@ -18,5 +18,4 @@ WORKDIR /app
 RUN rm -rf ./*
 COPY --from=build /app/package.json .
 COPY --from=build /app/build-node .
-RUN yarn --prod
 CMD ["node", "index.js"]
